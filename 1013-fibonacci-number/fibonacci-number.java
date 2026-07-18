@@ -10,7 +10,6 @@ class Solution {
     public int fibS(int[] temp, int n){
         if(n<=1)return n;
         if(temp[n]!=-1) return temp[n];
-        temp[n] = fibS(temp, n-1)+fibS(temp, n-2);
-        return fibS(temp, n-1)+fibS(temp, n-2);
+        return temp[n] = fibS(temp, n-1)+fibS(temp, n-2);
     }
 }
